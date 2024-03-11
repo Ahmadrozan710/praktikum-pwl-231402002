@@ -16,19 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/index.html', function () {
-    return view('index');
-});
-Route::get('/explore.html', function () {
-    return view('explore');
-});
-Route::get('/details.html', function () {
-    return view('details');
-});
-Route::get('/create.html', function () {
-    return view('create');
-});
-Route::get('/author.html', function () {
-    return view('author');
-});
+
 
