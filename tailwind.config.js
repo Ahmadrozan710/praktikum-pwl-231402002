@@ -12,6 +12,6 @@ export default {
 
 //Apabila warna background tampilan web menjadi hitam, tambahkan kode berikut
 daisyui: {
-  themes: ["dark"],
+  themes: ["light"],
 },
 }
