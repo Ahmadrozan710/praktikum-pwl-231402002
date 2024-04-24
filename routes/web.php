@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ToDoListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/', [ToDoListController::class, 'index']);
+
+Route::post('/', [ToDoListController::class, 'store']);
+
+Route::delete('/tasks/{id}', [ToDoListController::class, 'destroy'])->name('tasks.destroy');
+
+Route::get('/about', function () {
+    return view('welcome');
 });
-
-
